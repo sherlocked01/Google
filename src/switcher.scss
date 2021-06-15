@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body{
+    background-color: white;
+    color: black;
+    padding: 0;
+    height: 100vh;
+}
+
+.theme-options{
+    margin: 0px;
+    text-align: right;
+    padding: 13px 10px;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    div {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        margin: 2px 10px;
+        border: 1px solid white;
+        display: inline-block;
+        opacity: 0.5;
+
+        &.active{
+            opacity: 1;
+        }
+    }
+    #theme-white{
+        background-color: rgb(219, 203, 203);
+    }
+    #theme-blue{
+        background-color: rgb(32, 22, 80);
+    }
+    #theme-orange{
+        background-color: rgb(252, 223, 169);
+    }
+    #theme-green{
+        background-color: rgb(10, 82, 10);
+    }
+    #theme-purple{
+        background-color: purple;
+    }
+    #theme-black{
+        background-color: black;
+    }
+}
+.App.theme-blue{
+    background-color: rgb(32, 22, 80);
+    .content-box{
+        background-color: rgb(32, 22, 80);
+        svg text{
+            stroke: rgb(179, 226, 245);
+        }
+    }
+}
+.App.theme-orange{
+    background-color: rgb(252, 223, 169);
+    .content-box{
+        background-color: rgb(252, 223, 169);
+        svg text{
+            stroke: rgb(172, 22, 47);
+        }
+    }
+}
+.App.theme-green{
+    background-color: rgb(10, 82, 10);
+    .content-box{
+        background-color: rgb(10, 82, 10);
+        svg text{
+            stroke: rgb(154, 241, 187);
+        }
+    }
+}
+.App.theme-purple{
+    background-color: purple;
+    .content-box{
+        background-color: purple;
+        svg text{
+            stroke: rgb(226, 179, 245);
+        }
+    }
+}
+.App.theme-white{
+    background-color: white;
+    .content-box{
+        background-color: white;
+        svg text{
+            stroke: black;
+        }
+
+    }
+}
+.App.theme-black{
+    background-color: black;
+    .content-box{
+        background-color: black;
+        svg text{
+            stroke: #ffa5d8;;
+        }
+
+    }
+}
